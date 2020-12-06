@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}En espera de un título{% endblock %}
+
+{# 
+    {% block head %}
+        Aquí van estilos especificos para esta vista
+    {% endblock %} 
+#}
+
+{% block content %}
+    {% for post in posts %}
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <small>By {{ post.author }} on {{ post.date_posted }}</small>
+    {% endfor %}
+{% endblock %}
+
+
+{#
+    {% block footer %}
+        Aquí van scripts especificos para esta vista
+    {% endblock %}
+#}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}Error 404{% endblock %}
+
+{# 
+    {% block head %}
+        Aquí van estilos especificos para esta vista
+    {% endblock %} 
+#}
+
+{% block content %}
+<p>page_not_found <a href="{{ url_for('home') }}">inicio</a></p>
+{% endblock content %}v
